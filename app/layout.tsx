@@ -5,18 +5,32 @@ import { PropsWithChildren } from 'react';
 // import 'styles/main.css';
 import '@/app/globals.css';
 // import '../next-i18next.config.js';
+import { Metadata } from 'next';
 
 
 export const dynamic = 'force-dynamic';
 
-const meta = {
-  title: 'Next.js Subscription Starter',
-  description: 'Brought to you by Vercel, Stripe, and Supabase.',
+
+export const meta = {
+  title: {
+    default: 'Learn AI prompt generation with GPT',
+    template: `%s - Learn AI prompt generation with GPT`
+  },
+  description: 'Learn AI prompt generation with GPT ',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' }
+  ],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png'
+  },
+  type: 'website',
   cardImage: '/og.png',
   robots: 'follow, index',
   favicon: '/favicon.ico',
-  url: 'https://subscription-starter.vercel.app',
-  type: 'website'
+  url: 'https://beta-learn-ai.vercel.app/'
 };
 
 export const metadata = {
