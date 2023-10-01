@@ -252,7 +252,7 @@ export default function Pricing({
                 </div>
               </div>
             );
-          })}
+          }).slice(1, 4)}
         </div>
 
       </div>
