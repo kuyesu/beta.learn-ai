@@ -26,7 +26,7 @@ export default async function Navbar() {
             <Link href="/" className={clsx(s.logo, "outline-pink-600 border-pink-600 border rounded-full ")} aria-label="Logo">
               <Image src="/bot.png" alt="Logo" width={40} height={40} />
             </Link>
-            <Link href="/account" className={s.link}>
+            <Link href="/" className={s.link}>
               Learn AI{' '}
               <PopIn delay={0.1}>
                 <span className="text-xs">
