@@ -1,10 +1,9 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import Badge from './Badge';
+
 import BannerBadge from './BannerBadge';
-import PopIn from './motions/popin';
-import Input from './ui/Input';
+
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 import { FaRobot } from 'react-icons/fa';

@@ -3,9 +3,9 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
 import { createSelectors } from "./helpers";
-import type { ActiveTool } from "../hooks/useTools";
-import type { AgentLifecycle } from "../services/agent/agent-run-model";
-import type AutonomousAgent from "../services/agent/autonomous-agent";
+import type { ActiveTool } from "@/hooks/useTools";
+import type { AgentLifecycle } from "@/services/agent/agent-run-model";
+import type AutonomousAgent from "@/services/agent/autonomous-agent";
 
 interface AgentSlice {
   agent: AutonomousAgent | null;

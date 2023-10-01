@@ -3,8 +3,8 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
 import { createSelectors } from "./helpers";
-import { handleTheme } from "../hooks/useTheme";
-import type { Theme } from "../types";
+import { handleTheme } from "@/hooks/useTheme";
+import type { Theme } from "@/types";
 
 const resetters: (() => void)[] = [];
 

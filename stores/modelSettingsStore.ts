@@ -3,8 +3,8 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
 import { createSelectors } from "./helpers";
-import type { ModelSettings } from "../types";
-import { getDefaultModelSettings } from "../utils/constants";
+import type { ModelSettings } from "@/types";
+import { getDefaultModelSettings } from "@/utils/constants";
 
 const resetters: (() => void)[] = [];
 
