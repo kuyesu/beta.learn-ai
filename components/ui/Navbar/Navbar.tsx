@@ -63,7 +63,7 @@ export default async function Navbar() {
                     s.link
                   )}
                 >
-                  <p className="animate-border-pulse py group relative flex w-max cursor-pointer items-center gap-2 rounded-2xl bg-black px-4 py-2 text-xs text-white">
+                  <p className="animate-border-pulse py group relative flex w-max cursor-pointer items-center gap-2 rounded-full bg-black px-4 py-2 text-xs text-white">
                     <span>Sign in</span>
                     <FaChevronRight
                       size={10}
