@@ -32,7 +32,7 @@ export default async function Navbar() {
                 <span className="text-xs">
                   <sup>
                     <h1 className="relative top-0.5 text-transparent text-xs bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 via-[#02FCF1]  subpixel-antialiased">
-                      Beta
+                      Aplha
                     </h1>
                   </sup>
                 </span>
