@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import type { PropsWithChildren, ReactNode } from "react";
 
-import GlowWrapper from "../GlowWrapper";
+import GlowWrapper from "@/components/GlowWrapper";
 
 interface CycleItemsProps extends PropsWithChildren {
   className?: string;
