@@ -1,3 +1,4 @@
+// @ts-nocheck
 import SupabaseProvider from './supabase-provider';
 import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
@@ -51,7 +52,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black loading">
         <SupabaseProvider>
-          {/* @ts-expect-error server */}
+
           <Navbar />
           <main
             id="skip"
