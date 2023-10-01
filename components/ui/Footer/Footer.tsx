@@ -104,11 +104,11 @@ export default function Footer() {
         {/* made with love */}
 
         <div className="text-zinc-200">
-          <p className="mt-24 text-xs uppercase text-zinc-400 text-center font-bold tracking-[0.3em]">
+          <p className="mt-24 text-xs uppercase text-zinc-400 text-left font-bold tracking-[0.1em]">
             Made with ❤️ in Mbarara, Ug
           </p>
           <span className="text-zinc-400">
-            &copy; {new Date().getFullYear()} ACME, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Learn AI, Inc. All rights reserved.
           </span>
         </div>
         <div className="flex items-center">

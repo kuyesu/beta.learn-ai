@@ -1,12 +1,13 @@
-// @ts-nocheck
 import SupabaseProvider from './supabase-provider';
 import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
 import { PropsWithChildren } from 'react';
 // import 'styles/main.css';
 import '@/app/globals.css';
-import '../next-i18next.config.js';
+// import '../next-i18next.config.js';
 
+
+export const dynamic = 'force-dynamic';
 
 const meta = {
   title: 'Next.js Subscription Starter',
