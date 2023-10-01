@@ -222,7 +222,7 @@ export default function Pricing({
                   {
                     'border border-pink-500': subscription
                       ? product.name === subscription?.prices?.products?.name
-                      : product.name === 'Freelancer'
+                      : product.name === 'Student Plan'
                   }
                 )}
               >
@@ -232,7 +232,7 @@ export default function Pricing({
                   </h2>
                   <p className="mt-4 text-zinc-300">{product.description}</p>
                   <p className="mt-8">
-                    <span className="text-5xl font-extrabold white">
+                    <span className="text-5xl text-zinc-100 font-extrabold white">
                       {priceString}
                     </span>
                     <span className="text-base font-medium text-zinc-100">

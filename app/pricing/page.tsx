@@ -33,27 +33,6 @@ export default async function PricingPage() {
   //   }
   // ];
 
-  const dummyStripeProduct = {
-  id: 'dummy_product_id',
-  name: 'Dummy Product',
-  description: 'This is a dummy product for testing purposes.',
-  prices: [
-    {
-      id: 'dummy_price_id',
-      unit_amount: 1000, // Price in cents
-      currency: 'usd',
-      interval: 'month',
-      description: 'Monthly subscription',
-    },
-    {
-      id: 'dummy_price_yearly_id',
-      unit_amount: 10000, // Price in cents
-      currency: 'usd',
-      interval: 'year',
-      description: 'Yearly subscription',
-    },
-  ],
-};
 
 
   return (
