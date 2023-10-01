@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import type { Session } from "next-auth";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useEffect } from "react";
@@ -29,7 +29,7 @@ export function useAuth(
     }
 
     if (protectedRoute && status === "authenticated" && isAllowed && !isAllowed(session)) {
-      void push("/404").catch(console.error);
+      void push("/404")
     }
   }, [protectedRoute, isAllowed, status, session, push]);
 

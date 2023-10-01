@@ -2,7 +2,7 @@ import type { IncomingMessage, ServerResponse } from "http";
 
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import merge from "lodash/merge";
-import type { GetServerSidePropsContext, NextApiRequest, NextApiResponse } from "next";
+import type {  NextApiRequest, NextApiResponse } from "next";
 import type { AuthOptions, Awaitable } from "next-auth";
 import { getServerSession } from "next-auth";
 import type { Adapter, AdapterUser } from "next-auth/adapters";
@@ -74,9 +74,9 @@ export const authOptions = (
  * to import the authOptions in every file.
  * @see https://next-auth.js.org/configuration/nextjs
  **/
-export const getServerAuthSession = (ctx: {
-  req: GetServerSidePropsContext["req"];
-  res: GetServerSidePropsContext["res"];
-}) => {
-  return getServerSession(ctx.req, ctx.res, authOptions(ctx.req, ctx.res));
-};
+// export const getServerAuthSession = (ctx: {
+//   req: GetServerSidePropsContext["req"];
+//   res: GetServerSidePropsContext["res"];
+// }) => {
+//   return getServerSession(ctx.req, ctx.res, authOptions(ctx.req, ctx.res));
+// };
