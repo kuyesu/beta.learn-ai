@@ -41,10 +41,10 @@ export default async function Navbar() {
           </div>
           <div className="flex justify-end flex-1 space-x-8">
             <nav className="hidden ml-6 space-x-2 lg:block">
-              <Link href="/" className={s.link}>
+              <Link href="/prompt-template" className={s.link}>
                 Templates
               </Link>
-              <Link href="/" className={s.link}>
+              <Link href="/pricing" className={s.link}>
                 Pricing
               </Link>
               {user && (

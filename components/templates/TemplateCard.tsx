@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 import type { TemplateModel } from "./TemplateData";
-import { useAgentInputStore } from "../../stores/agentInputStore";
+import { useAgentInputStore } from "@/stores/agentInputStore";
 
 type TemplateCardProps = {
   model: TemplateModel;
@@ -16,7 +16,7 @@ const TemplateCard = ({ model }: TemplateCardProps) => {
   const handleClick = () => {
     setNameInput(model.name);
     setGoalInput(model.promptTemplate);
-    router.push("/").catch(console.log);
+    router.push("/");
   };
   return (
     <div
