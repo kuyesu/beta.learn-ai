@@ -2,7 +2,10 @@ import SupabaseProvider from './supabase-provider';
 import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
 import { PropsWithChildren } from 'react';
-import 'styles/main.css';
+// import 'styles/main.css';
+import '@/app/globals.css';
+import '../next-i18next.config.js';
+
 
 const meta = {
   title: 'Next.js Subscription Starter',
@@ -48,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black loading">
         <SupabaseProvider>
-          {/* @ts-expect-error */}
+        {/* @ts-expect-error */}
           <Navbar />
           <main
             id="skip"

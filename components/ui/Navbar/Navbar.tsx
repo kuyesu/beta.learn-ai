@@ -1,10 +1,13 @@
-import Link from 'next/link';
-import { createServerSupabaseClient } from '@/app/supabase-server';
-
-import Logo from '@/components/icons/Logo';
-import SignOutButton from './SignOutButton';
-
 import s from './Navbar.module.css';
+import SignOutButton from './SignOutButton';
+import { createServerSupabaseClient } from '@/app/supabase-server';
+import Badge from '@/components/Badge';
+import Logo from '@/components/icons/Logo';
+import PopIn from '@/components/motions/popin';
+import clsx from 'clsx';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaChevronRight } from 'react-icons/fa';
 
 export default async function Navbar() {
   const supabase = createServerSupabaseClient();
@@ -21,9 +24,26 @@ export default async function Navbar() {
         <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
           <div className="flex items-center flex-1">
             <Link href="/" className={s.logo} aria-label="Logo">
-              <Logo />
+              <Image src="/bot.png" alt="Logo" width={40} height={40} />
             </Link>
+            <Link href="/account" className={s.link}>
+              Learn AI{' '}
+              <PopIn delay={0.1}>
+                <span className="text-xs">
+                  <sup>
+                    <h1 className="relative top-0.5 text-transparent text-xs bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 via-[#02FCF1]  subpixel-antialiased">
+                      Beta
+                    </h1>
+                  </sup>
+                </span>
+              </PopIn>
+            </Link>
+          </div>
+          <div className="flex justify-end flex-1 space-x-8">
             <nav className="hidden ml-6 space-x-2 lg:block">
+              <Link href="/" className={s.link}>
+                Templates
+              </Link>
               <Link href="/" className={s.link}>
                 Pricing
               </Link>
@@ -33,13 +53,24 @@ export default async function Navbar() {
                 </Link>
               )}
             </nav>
-          </div>
-          <div className="flex justify-end flex-1 space-x-8">
             {user ? (
               <SignOutButton />
             ) : (
-              <Link href="/signin" className={s.link}>
-                Sign in
+              <Link href="/signin" >
+                <div
+                  className={clsx(
+                    'rounded-full bg-gradient-to-tl from-pink-600 to-[#A02BFE] via-[#02FCF1] p-[1px] subpixel-antialiased',
+                    s.link
+                  )}
+                >
+                  <p className="animate-border-pulse py group relative flex w-max cursor-pointer items-center gap-2 rounded-2xl bg-black px-4 py-2 text-xs text-white">
+                    <span>Sign in</span>
+                    <FaChevronRight
+                      size={10}
+                      className="font-thin text-gray-400 transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </p>
+                </div>
               </Link>
             )}
           </div>
