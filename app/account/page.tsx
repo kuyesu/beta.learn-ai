@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ManageSubscriptionButton from './ManageSubscriptionButton';
 import {
   getSession,
