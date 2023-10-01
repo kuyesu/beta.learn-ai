@@ -9,7 +9,7 @@ type Props = {};
 
 const Demo = (props: Props) => {
   return (
-    <div className="h-full border border-zinc-800  max-w-6xl mx-auto rounded-2xl  py-6 ">
+    <div className="h-full border border-zinc-800  max-w-6xl mx-auto rounded-2xl  pt-6 ">
       <Tabs defaultValue="prompts" className="h-full ">
         <div className="space-between justify-center  border-b border-zinc-800 flex items-start">
           <TabsList className=" bg-transparent items-start relative bottom-3 space-x-5">
@@ -43,7 +43,7 @@ const Demo = (props: Props) => {
             backgroundColor:
               'linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))'
           }}
-          className="border-none p-0 pt-5 outline-none px-4 lg:px-8  bg-gradient-to-bl from-gray-700 via-gray-900 to-black "
+          className="border-none my-0 pb-10 pt-5 rounded-b-2xl outline-none px-4 lg:px-8  bg-gradient-to-bl from-gray-700 via-gray-900 to-black "
         >
           <div className="flex flex-col items-start rounded-2xl md:p-8 p-4 bg-black">
             <div className="flex items-center justify-between ">
